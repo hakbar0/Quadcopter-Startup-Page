@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font: normal 16px sans-sherif;
+  color: #555;
+}
+
+ul, nav{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  opacity: 0.8;
+  color: black;
+}
+
+a:hover{
+  opacity:1;
+}
+
+a.btn{
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(233, 211, 102);
+  opacity: 1;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 80px;
+}
+
+header{
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 100px 0;
+  animation: 1s fade 0.5s forwards;
+  opacity: 0;
+  color: black;
+}
+
+@keyframes fade {
+  100%{
+    opacity: 1;
+  }
+}
+
+header h2{
+  font-family: "Quicksand", sans-serif;
+}
+
+header nav{
+  display: flex;
+  margin-right: -15px;
+}
+
+header nav li {
+  margin: 0 15px;
+}
+
+.hero{
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  color: black;
+}
+
+.hero .background-image{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: -1;
+  background-color: lightblue;
+}
+
+.hero h1{
+  font: bold 60px "Opens Sans", sans-sherif;
+  margin-top: 500px;
+}
+
+.hero h3{
+  font: normal 28px "Opens Sans", sans-sherif;
+  margin-bottom: 40px;
+}
+
+.hero a.btn{
+  padding: 20px 46px;
+}
+
+.hero-content-area{
+  opacity: 0;
+  margin-top: 100px;
+  animation: 1s slide 1s forwards;
+}
+
+@keyframes slide {
+  100%{
+    opacity: 1;
+    margin: 0;
+  }
+}
