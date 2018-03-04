@@ -71,7 +71,7 @@ header nav li {
   color: black;
 }
 
-.hero .background-image{
+.hero .background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -79,12 +79,12 @@ header nav li {
   height: 100%;
   background-size: cover;
   z-index: -1;
-  background-color: lightblue;
+  background-color: #80a3db;
 }
 
 .hero h1{
   font: bold 60px "Opens Sans", sans-sherif;
-  margin-top: 550px;
+  margin-bottom: 15px;
 }
 
 .hero h3{
@@ -151,11 +151,7 @@ section p {
 }
 
 .drones .grid li.small {
-  flex-basis: 40%;
-}
-
-.drones .grid li.medium {
-  flex-basis: 60%;
+  flex-basis: 50%;
 }
 
 section:not(.hero):nth-child(even){
@@ -192,3 +188,82 @@ a.btn{
   flex: 1;
 }
 
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #607d8b;
+  color: #fff;
+  padding: 20px 0;
+}
+
+footer ul{
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 16px;
+}
+
+footer p {
+  text-transform:uppercase;
+  font-size: 14px;
+  opacity: 0.6;
+  align-self: center;
+
+}
+
+@media (max-width: 800px){
+  section{
+    padding:50px 20px;
+  }
+}
+
+@media (max-width: 800px){
+  header{
+    padding:20px 50px;
+    flex-direction: column;
+  }
+  header h2{
+    margin-bottom: 15px;
+  }
+  .hero{
+    min-height: 600px;
+  }
+  .hero h1{
+    font-size: 48px;
+  }
+}
+
+
+@media (max-width: 1100px){
+  .drones .grid li.small,
+  .drones .grid li.media{
+   flex-basis: 50%;
+  }
+ }
+
+
+ @media (max-width: 900px){
+  .drones .grid li.small,
+  .drones .grid li.media{
+   flex-basis: 100%;
+  }
+ }
+
+ @media (max-width: 1000px){
+  .contact form input {
+    flex-basis: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 1100px){
+  footer p{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer ul li{
+    margin: 0 8px;
+  }
+  }
